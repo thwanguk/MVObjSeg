@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E53A648C-CF7C-4697-90BF-59DAAB349B9B}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>MultiViewImageSeg</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\OpenCV243\build\include;C:\OpenCV243\build\include\opencv;..\mrfstereo\mrfstereo;..\MRF2.2\MRF2.2;..\imageLib\imageLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\OpenCV243\build\x86\vc10\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opencv_core243d.lib;opencv_flann243d.lib;opencv_features2d243d.lib;opencv_highgui243d.lib;opencv_imgproc243d.lib;opencv_legacy243d.lib;opencv_nonfree243d.lib;opencv_video243d.lib;opencv_ml243d.lib;opencv_calib3d243d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\opencv240\opencv\build\include;C:\opencv240\opencv\build\include\opencv;C:\Users\Administrator\Desktop\MultiViewImageSeg1\mrfstereo\mrfstereo;C:\Users\Administrator\Desktop\MultiViewImageSeg1\MRF2.2\MRF2.2;C:\Users\Administrator\Desktop\MultiViewImageSeg1\imageLib\imageLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\mrfstereo\mrfstereo;..\MRF2.2\MRF2.2;..\imageLib\imageLib;C:\OpenCV243\build\include;C:\OpenCV243\build\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>C:\OpenCV243\build\x86\vc10\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opencv_core243.lib;opencv_flann243.lib;opencv_features2d243.lib;opencv_highgui243.lib;opencv_imgproc243.lib;opencv_legacy243.lib;opencv_nonfree243.lib;opencv_video243.lib;opencv_ml243.lib;opencv_calib3d243.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\mrfstereo\mrfstereo;..\MRF2.2\MRF2.2;..\imageLib\imageLib;C:\OpenCV243\build\include;C:\OpenCV243\build\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>C:\OpenCV243\build\x64\vc10\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opencv_core243.lib;opencv_flann243.lib;opencv_features2d243.lib;opencv_highgui243.lib;opencv_imgproc243.lib;opencv_legacy243.lib;opencv_nonfree243.lib;opencv_video243.lib;opencv_ml243.lib;opencv_calib3d243.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\BPFlow.cpp" />
+    <ClCompile Include="..\CBandedGraphCut.cpp" />
+    <ClCompile Include="..\CBoWSIFT.cpp" />
+    <ClCompile Include="..\CInterViewGraph.cpp" />
+    <ClCompile Include="..\CSingleViewProc.cpp" />
+    <ClCompile Include="..\CSuperPixel.cpp" />
+    <ClCompile Include="..\CTexton.cpp" />
+    <ClCompile Include="..\dirop.cpp" />
+    <ClCompile Include="..\gmm.cpp" />
+    <ClCompile Include="..\gmmbuilder.cpp" />
+    <ClCompile Include="..\grabcutapp.cpp" />
+    <ClCompile Include="..\graphcutseg.cpp" />
+    <ClCompile Include="..\imageLib\imageLib\Convert.cpp" />
+    <ClCompile Include="..\imageLib\imageLib\Convolve.cpp" />
+    <ClCompile Include="..\imageLib\imageLib\Image.cpp" />
+    <ClCompile Include="..\imageLib\imageLib\RefCntMem.cpp" />
+    <ClCompile Include="..\main.cpp" />
+    <ClCompile Include="..\MRF2.2\MRF2.2\BP-S.cpp" />
+    <ClCompile Include="..\MRF2.2\MRF2.2\GCoptimization.cpp" />
+    <ClCompile Include="..\MRF2.2\MRF2.2\graph.cpp" />
+    <ClCompile Include="..\MRF2.2\MRF2.2\ICM.cpp" />
+    <ClCompile Include="..\MRF2.2\MRF2.2\LinkedBlockList.cpp" />
+    <ClCompile Include="..\MRF2.2\MRF2.2\maxflow.cpp" />
+    <ClCompile Include="..\MRF2.2\MRF2.2\MaxProdBP.cpp" />
+    <ClCompile Include="..\MRF2.2\MRF2.2\mrf.cpp" />
+    <ClCompile Include="..\MRF2.2\MRF2.2\regions-maxprod.cpp" />
+    <ClCompile Include="..\MRF2.2\MRF2.2\TRW-S.cpp" />
+    <ClCompile Include="..\mrfstereo\mrfstereo\mrfstereo.cpp" />
+    <ClCompile Include="..\mrfstereo\mrfstereo\XGetopt.cpp" />
+    <ClCompile Include="..\SLIC.cpp" />
+    <ClCompile Include="..\Stochastic.cpp" />
+    <ClCompile Include="..\svm.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\BPFlow.h" />
+    <ClInclude Include="..\CBandedGraphCut.h" />
+    <ClInclude Include="..\CBoWSIFT.h" />
+    <ClInclude Include="..\CInterViewGraph.h" />
+    <ClInclude Include="..\CSingleViewProc.h" />
+    <ClInclude Include="..\CSuperPixel.h" />
+    <ClInclude Include="..\CTexton.h" />
+    <ClInclude Include="..\dirop.h" />
+    <ClInclude Include="..\drawFlow.h" />
+    <ClInclude Include="..\gcgraph.hpp" />
+    <ClInclude Include="..\gmm.h" />
+    <ClInclude Include="..\gmmbuilder.h" />
+    <ClInclude Include="..\grabcutapp.h" />
+    <ClInclude Include="..\graphcutseg.hpp" />
+    <ClInclude Include="..\Image.h" />
+    <ClInclude Include="..\ImageFeature.h" />
+    <ClInclude Include="..\imageLib\imageLib\Convert.h" />
+    <ClInclude Include="..\imageLib\imageLib\Convolve.h" />
+    <ClInclude Include="..\imageLib\imageLib\Error.h" />
+    <ClInclude Include="..\imageLib\imageLib\imageLib.h" />
+    <ClInclude Include="..\imageLib\imageLib\RefCntMem.h" />
+    <ClInclude Include="..\ImageProcessing.h" />
+    <ClInclude Include="..\MRF2.2\MRF2.2\block.h" />
+    <ClInclude Include="..\MRF2.2\MRF2.2\BP-S.h" />
+    <ClInclude Include="..\MRF2.2\MRF2.2\energy.h" />
+    <ClInclude Include="..\MRF2.2\MRF2.2\GCoptimization.h" />
+    <ClInclude Include="..\MRF2.2\MRF2.2\graph.h" />
+    <ClInclude Include="..\MRF2.2\MRF2.2\ICM.h" />
+    <ClInclude Include="..\MRF2.2\MRF2.2\LinkedBlockList.h" />
+    <ClInclude Include="..\MRF2.2\MRF2.2\MaxProdBP.h" />
+    <ClInclude Include="..\MRF2.2\MRF2.2\mrf.h" />
+    <ClInclude Include="..\MRF2.2\MRF2.2\regions-new.h" />
+    <ClInclude Include="..\MRF2.2\MRF2.2\TRW-S.h" />
+    <ClInclude Include="..\MRF2.2\MRF2.2\typeTruncatedQuadratic2D.h" />
+    <ClInclude Include="..\mrfstereo\mrfstereo\mrfstereo.h" />
+    <ClInclude Include="..\mrfstereo\mrfstereo\XGetopt.h" />
+    <ClInclude Include="..\multiViewData.h" />
+    <ClInclude Include="..\project.h" />
+    <ClInclude Include="..\SLIC.h" />
+    <ClInclude Include="..\Stochastic.h" />
+    <ClInclude Include="..\svm.h" />
+    <ClInclude Include="..\targetver.h" />
+    <ClInclude Include="..\ui.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
